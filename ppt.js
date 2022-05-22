@@ -24,19 +24,19 @@ function count(cellocation,value){
                     document.getElementById("as").innerHTML="stop 8 queens have been entered";
                 }
         }
-    else if(value==False)
+    else if(value==false)
         {
             callsoffunctions--;
             checksolution[cellocation]=cellocation;
+            document.getElementById("as").innerHTML="number of queens entered  "+callsoffunctions;
 
         }
 }
 
 
 function checksol(){
-  
-    if(checksolution[1]==0 && checksolution[13]==0 && checksolution[24]==0 &checksolution[30]==0 && checksolution[35]==0
-        && checksolution[47]==0 && checksolution[50]==0 && checksolution[60]==0)
+    
+    if(checksolution[1]==0 && checksolution[13]==0 && checksolution[24]==0 &&checksolution[30]==0 && checksolution[35]==0 && checksolution[47]==0 && checksolution[50]==0 && checksolution[60]==0)
     {
         document.getElementById("sa").innerHTML="Correct WELL PLAYED!!";
     }
@@ -48,160 +48,498 @@ function checksol(){
 
 }
 var b11=false
+var b12=false
+var b13=false
+var b14=false
+var b15=false
+var b16=false
+var b17=false
+var b18=false
 
 function f11(){
-   if(b11==false)
-      { 
-        b11=true;
-        document.getElementById("man11").src="crown.png";
-        count(1,b11);
-      }
-   else if(b11=true)
-      {
-        b11=false;
-        document.getElementById("man11").src="black.png";
-      }
-}
+    if(b11==false)
+       { 
+         b11=true;
+         document.getElementById("man11").src="crown.png";
+         count(1,b11);
+       }
+    else if(b11=true)
+       {
+         b11=false;
+         document.getElementById("man11").src="black.png";
+         count(1,b11);
+       }
+ }
 function f12(){
-    document.getElementById("man12").src="crown.png";
-    count(2);
-}
+     if(b12==false)
+       { 
+         b12=true;
+         document.getElementById("man12").src="crown.png";
+         count(2,b12);
+       }
+    else if(b12=true)
+       {
+         b12=false;
+         document.getElementById("man12").src="white.png";
+         count(2,b12);
+       }
+ }
 function f13(){
-    document.getElementById("man13").src="crown.png";
-    count(3);
- }
-
- function f14(){
-    document.getElementById("man14").src="crown.png";
-    count(4);
- }
- function f15(){
-     document.getElementById("man15").src="crown.png";
-     count(5);
- }
- function f16(){
-     document.getElementById("man16").src="crown.png";
-     count(6);
+     if(b13==false)
+       { 
+         b13=true;
+         document.getElementById("man13").src="crown.png";
+         count(3,b13);
+       }
+    else if(b13=true)
+       {
+         b14=false;
+         document.getElementById("man13").src="black.png";
+         count(3,b14);
+       }
   }
-  function f17(){
-      document.getElementById("man17").src="crown.png";
-      count(7);
+function f14(){
+     if(b14==false)
+       { 
+         b14=true;
+         document.getElementById("man14").src="crown.png";
+         count(4,b14);
+       }
+    else if(b14=true)
+       {
+         b14=false;
+         document.getElementById("man14").src="white.png";
+         count(4,b14);
+       }
   }
-function f18(){
-    document.getElementById("man18").src="crown.png";
-    count(8);
-}
+function f15(){
+     if(b15==false)
+     { 
+       b15=true;
+       document.getElementById("man15").src="crown.png";
+       count(5,b15);
+     }
+     else if(b15=true)
+     {
+       b15=false;
+       document.getElementById("man15").src="black.png";
+       count(5,b15);
+     }
+  }
+function f16(){
+     if(b16==false)
+     { 
+       b16=true;
+       document.getElementById("man16").src="crown.png";
+       count(6,b16);
+     }
+     else if(b16=true)
+     {
+       b16=false;
+       document.getElementById("man16").src="white.png";
+       count(6,b16);
+     }
+   }
+function f17(){
+     if(b17==false)
+     { 
+       b17=true;
+       document.getElementById("man17").src="crown.png";
+       count(7,b17);
+     }
+     else if(b17=true)
+     {
+       b17=false;
+       document.getElementById("man17").src="black.png";
+       count(7,b17);
+     }
+   }
+ function f18(){
+     if(b18==false)
+     { 
+       b18=true;
+       document.getElementById("man18").src="crown.png";
+       count(8,b18);
+     }
+     else if(b18=true)
+     {
+       b18=false;
+       document.getElementById("man18").src="white.png";
+       count(8,b18);
+     }
+ }
 
 
 
+var b21=false
+var b22=false
+var b23=false
+var b24=false
+var b25=false
+var b26=false
+var b27=false
+var b28=false
 
 function f21(){
-    document.getElementById("man21").src="crown.png";
-    count(9);
-}
+    if(b21==false)
+       { 
+         b21=true;
+         document.getElementById("man21").src="crown.png";
+         count(9,b21);
+       }
+    else if(b21=true)
+       {
+         b21=false;
+         document.getElementById("man21").src="white.png";
+         count(9,b21);
+       }
+ }
+ function f22(){
+     if(b22==false)
+       { 
+         b22=true;
+         document.getElementById("man22").src="crown.png";
+         count(10,b22);
+       }
+    else if(b22=true)
+       {
+         b22=false;
+         document.getElementById("man22").src="black.png";
+         count(10,b22);
+       }
+ }
+ function f23(){
+     if(b23==false)
+       { 
+         b23=true;
+         document.getElementById("man23").src="crown.png";
+         count(11,b23);
+       }
+    else if(b23=true)
+       {
+         b23=false;
+         document.getElementById("man23").src="white.png";
+         count(11,b23);
+       }
+  }
+ 
+  function f24(){
+     if(b24==false)
+       { 
+         b24=true;
+         document.getElementById("man24").src="crown.png";
+         count(12,b24);
+       }
+    else if(b24=true)
+       {
+         b24=false;
+         document.getElementById("man24").src="black.png";
+         count(12,b24);
+       }
+  }
+  function f25(){
+     if(b25==false)
+     { 
+       b25=true;
+       document.getElementById("man25").src="crown.png";
+       count(13,b25);
+     }
+     else if(b25=true)
+     {
+       b25=false;
+       document.getElementById("man25").src="white.png";
+       count(13,b25);
+     }
+  }
+  function f26(){
+     if(b26==false)
+     { 
+       b26=true;
+       document.getElementById("man26").src="crown.png";
+       count(14,b26);
+     }
+     else if(b26=true)
+     {
+       b26=false;
+       document.getElementById("man26").src="black.png";
+       count(14,b26);
+     }
+   }
+   function f27(){
+     if(b27==false)
+     { 
+       b27=true;
+       document.getElementById("man27").src="crown.png";
+       count(15,b27);
+     }
+     else if(b27=true)
+     {
+       b27=false;
+       document.getElementById("man27").src="white.png";
+       count(15,b27);
+     }
+   }
+ function f28(){
+     if(b28==false)
+     { 
+       b28=true;
+       document.getElementById("man28").src="crown.png";
+       count(16,b28);
+     }
+     else if(b28=true)
+     {
+       b28=false;
+       document.getElementById("man28").src="black.png";
+       count(16,b28);
+     }
+ }
 
-function f22(){
-    document.getElementById("man22").src="crown.png";
-    count(10);
-}
-function f23(){
-    document.getElementById("man23").src="crown.png";
-    count(11);
-}
-function f24(){
-    document.getElementById("man24").src="crown.png";
-    count(12);
-}
-function f25(){
-    document.getElementById("man25").src="crown.png";
-    count(13);
-}
-function f26(){
-    document.getElementById("man26").src="crown.png";
-    count(14);
-}
-function f27(){
-    document.getElementById("man27").src="crown.png";
-    count(15);
-}
-function f28(){
-    document.getElementById("man28").src="crown.png";
-    count(16);
-}
 
 
 
-
+var b31=false
+var b32=false
+var b33=false
+var b34=false
+var b35=false
+var b36=false
+var b37=false
+var b38=false
 
 function f31(){
-    document.getElementById("man31").src="crown.png";
-    count(17);
-}
+    if(b31==false)
+       { 
+         b31=true;
+         document.getElementById("man31").src="crown.png";
+         count(17,b31);
+       }
+    else if(b31=true)
+       {
+         b31=false;
+         document.getElementById("man31").src="black.png";
+         count(17,b31);
+       }
+ }
 function f32(){
-    document.getElementById("man32").src="crown.png";
-    count(18);
-}
+     if(b32==false)
+       { 
+         b32=true;
+         document.getElementById("man32").src="crown.png";
+         count(18,b32);
+       }
+    else if(b32=true)
+       {
+         b32=false;
+         document.getElementById("man32").src="white.png";
+         count(18,b32);
+       }
+ }
 function f33(){
-    document.getElementById("man33").src="crown.png";
-    count(19);
-}
-function f34(){
-    document.getElementById("man34").src="crown.png";
-    count(20);
-}
+     if(b33==false)
+       { 
+         b33=true;
+         document.getElementById("man33").src="crown.png";
+         count(19,b33);
+       }
+    else if(b33=true)
+       {
+         b33=false;
+         document.getElementById("man33").src="black.png";
+         count(19,b33);
+       }
+  }
+ function f34(){
+     if(b34==false)
+       { 
+         b34=true;
+         document.getElementById("man34").src="crown.png";
+         count(20,b34);
+       }
+    else if(b34=true)
+       {
+         b34=false;
+         document.getElementById("man34").src="white.png";
+         count(20,b34);
+       }
+  }
 function f35(){
-    document.getElementById("man35").src="crown.png";
-    count(21);
-}
+     if(b35==false)
+     { 
+       b35=true;
+       document.getElementById("man35").src="crown.png";
+       count(21,b35);
+     }
+     else if(b35=true)
+     {
+       b35=false;
+       document.getElementById("man35").src="black.png";
+       count(21,b35);
+     }
+  }
 function f36(){
-    document.getElementById("man36").src="crown.png";
-    count(22);
-}
+     if(b36==false)
+     { 
+       b36=true;
+       document.getElementById("man36").src="crown.png";
+       count(22,b36);
+     }
+     else if(b36=true)
+     {
+       b36=false;
+       document.getElementById("man36").src="white.png";
+       count(22,b36);
+     }
+   }
 function f37(){
-    document.getElementById("man37").src="crown.png";
-    count(23);
-}
+     if(b37==false)
+     { 
+       b37=true;
+       document.getElementById("man37").src="crown.png";
+       count(23,b37);
+     }
+     else if(b37=true)
+     {
+       b37=false;
+       document.getElementById("man37").src="black.png";
+       count(23,b37);
+     }
+   }
 function f38(){
-    document.getElementById("man38").src="crown.png";
-    count(24);
-}
+     if(b38==false)
+     { 
+       b38=true;
+       document.getElementById("man38").src="crown.png";
+       count(24,b38);
+     }
+     else if(b38=true)
+     {
+       b38=false;
+       document.getElementById("man38").src="white.png";
+       count(24,b38);
+     }
+ }
 
+ var b41=false
+ var b42=false
+ var b43=false
+ var b44=false
+ var b45=false
+ var b46=false
+ var b47=false
+ var b48=false
 
-
-
-function f41(){
-    document.getElementById("man41").src="crown.png";
-    count(25);
-}
-function f42(){
-    document.getElementById("man42").src="crown.png";
-    count(26);
-}
+ function f41(){
+    if(b41==false)
+       { 
+         b41=true;
+         document.getElementById("man41").src="crown.png";
+         count(25,b41);
+       }
+    else if(b41=true)
+       {
+         b41=false;
+         document.getElementById("man41").src="white.png";
+         count(25,b21);
+       }
+ }
+ function f42(){
+     if(b42==false)
+       { 
+         b42=true;
+         document.getElementById("man42").src="crown.png";
+         count(26,b42);
+       }
+    else if(b42=true)
+       {
+         b42=false;
+         document.getElementById("man42").src="black.png";
+         count(26,b22);
+       }
+ }
 function f43(){
-    document.getElementById("man43").src="crown.png";
-    count(27);
-}
-function f44(){
-    document.getElementById("man44").src="crown.png";
-    count(28);
-}
+     if(b43==false)
+       { 
+         b43=true;
+         document.getElementById("man43").src="crown.png";
+         count(27,b43);
+       }
+    else if(b43=true)
+       {
+         b43=false;
+         document.getElementById("man43").src="white.png";
+         count(27,b23);
+       }
+  }
+ function f44(){
+     if(b44==false)
+       { 
+         b44=true;
+         document.getElementById("man44").src="crown.png";
+         count(28,b44);
+       }
+    else if(b44=true)
+       {
+         b44=false;
+         document.getElementById("man44").src="black.png";
+         count(28,b44);
+       }
+  }
 function f45(){
-    document.getElementById("man45").src="crown.png";
-    count(29);
-}
+     if(b45==false)
+     { 
+       b45=true;
+       document.getElementById("man45").src="crown.png";
+       count(29,b45);
+     }
+     else if(b45=true)
+     {
+       b45=false;
+       document.getElementById("man45").src="white.png";
+       count(29,b45);
+     }
+  }
 function f46(){
-    document.getElementById("man46").src="crown.png";
-    count(30);
-}
+     if(b46==false)
+     { 
+       b46=true;
+       document.getElementById("man46").src="crown.png";
+       count(30,b46);
+     }
+     else if(b46=true)
+     {
+       b46=false;
+       document.getElementById("man46").src="black.png";
+       count(30,b46);
+     }
+   }
 function f47(){
-    document.getElementById("man47").src="crown.png";
-    count(31);
-}
+     if(b47==false)
+     { 
+       b47=true;
+       document.getElementById("man47").src="crown.png";
+       count(31,b47);
+     }
+     else if(b47=true)
+     {
+       b47=false;
+       document.getElementById("man47").src="white.png";
+       count(31,b47);
+     }
+   }
 function f48(){
-    document.getElementById("man48").src="crown.png";
-    count(32);
-}
-
+     if(b48==false)
+     { 
+       b48=true;
+       document.getElementById("man48").src="crown.png";
+       count(32,b48);
+     }
+     else if(b48=true)
+     {
+       b48=false;
+       document.getElementById("man48").src="black.png";
+       count(32,b48);
+     }
+ }
 
 
 
