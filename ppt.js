@@ -93,9 +93,9 @@ function f13(){
        }
     else if(b13=true)
        {
-         b14=false;
+         b13=false;
          document.getElementById("man13").src="black.png";
-         count(3,b14);
+         count(3,b13);
        }
   }
 function f14(){
@@ -349,73 +349,73 @@ function f33(){
        }
   }
  function f34(){
-     if(b54==false)
+     if(b34==false)
        { 
-         b54=true;
+         b34=true;
          document.getElementById("man34").src="crown.png";
-         count(20,b54);
+         count(20,b34);
        }
-    else if(b54=true)
+    else if(b34=true)
        {
-         b54=false;
+         b34=false;
          document.getElementById("man34").src="white.png";
-         count(20,b54);
+         count(20,b34);
        }
   }
 function f35(){
-     if(b55==false)
+     if(b35==false)
      { 
-       b55=true;
+       b35=true;
        document.getElementById("man35").src="crown.png";
-       count(21,b55);
+       count(21,b35);
      }
-     else if(b55=true)
+     else if(b35=true)
      {
-       b55=false;
+       b35=false;
        document.getElementById("man35").src="black.png";
-       count(21,b55);
+       count(21,b35);
      }
   }
 function f36(){
-     if(b56==false)
+     if(b36==false)
      { 
-       b56=true;
+       b36=true;
        document.getElementById("man36").src="crown.png";
-       count(22,b56);
+       count(22,b36);
      }
-     else if(b56=true)
+     else if(b36=true)
      {
-       b56=false;
+       b36=false;
        document.getElementById("man36").src="white.png";
-       count(22,b56);
+       count(22,b36);
      }
    }
 function f37(){
-     if(b57==false)
+     if(b37==false)
      { 
-       b57=true;
+       b37=true;
        document.getElementById("man37").src="crown.png";
-       count(23,b57);
+       count(23,b37);
      }
-     else if(b57=true)
+     else if(b37=true)
      {
-       b57=false;
+       b37=false;
        document.getElementById("man37").src="black.png";
-       count(23,b57);
+       count(23,b37);
      }
    }
 function f38(){
-     if(b58==false)
+     if(b38==false)
      { 
-       b58=true;
+       b38=true;
        document.getElementById("man38").src="crown.png";
-       count(24,b58);
+       count(24,b38);
      }
-     else if(b58=true)
+     else if(b38=true)
      {
-       b58=false;
+       b38=false;
        document.getElementById("man38").src="white.png";
-       count(24,b58);
+       count(24,b38);
      }
  }
 
@@ -439,7 +439,7 @@ function f38(){
        {
          b41=false;
          document.getElementById("man41").src="white.png";
-         count(25,b21);
+         count(25,b41);
        }
  }
  function f42(){
@@ -453,7 +453,7 @@ function f38(){
        {
          b42=false;
          document.getElementById("man42").src="black.png";
-         count(26,b22);
+         count(26,b42);
        }
  }
 function f43(){
@@ -467,7 +467,7 @@ function f43(){
        {
          b43=false;
          document.getElementById("man43").src="white.png";
-         count(27,b23);
+         count(27,b43);
        }
   }
  function f44(){
@@ -564,7 +564,7 @@ function f48(){
         {
           b51=false;
           document.getElementById("man51").src="black.png";
-          count(33,b31);
+          count(33,b51);
         }
   }
  function f52(){
@@ -666,39 +666,128 @@ function f48(){
       }
   }
 
-
-function f61(){
-    document.getElementById("man61").src="crown.png";
-    count(41);
-}
-function f62(){
-    document.getElementById("man62").src="crown.png";
-    count(42);
-}
-function f63(){
-    document.getElementById("man63").src="crown.png";
-    count(43);
-}
-function f64(){
-    document.getElementById("man64").src="crown.png";
-    count(44);
-}
-function f65(){
-    document.getElementById("man65").src="crown.png";
-    count(45);
-}
-function f66(){
-    document.getElementById("man66").src="crown.png";
-    count(46);
-}
-function f67(){
-    document.getElementById("man67").src="crown.png";
-    count(47);
-}
-function f68(){
-    document.getElementById("man68").src="crown.png";
-    count(48);
-}
+  
+  var b61=false
+  var b62=false
+  var b63=false
+  var b64=false
+  var b65=false
+  var b66=false
+  var b67=false
+  var b68=false
+  
+  function f61(){
+     if(b61==false)
+        { 
+          b61=true;
+          document.getElementById("man61").src="crown.png";
+          count(41,b61);
+        }
+     else if(b61=true)
+        {
+          b61=false;
+          document.getElementById("man61").src="white.png";
+          count(41,b61);
+        }
+  }
+  function f62(){
+      if(b62==false)
+        { 
+          b62=true;
+          document.getElementById("man62").src="crown.png";
+          count(42,b62);
+        }
+     else if(b62=true)
+        {
+          b62=false;
+          document.getElementById("man62").src="black.png";
+          count(42,b62);
+        }
+  }
+  function f63(){
+      if(b63==false)
+        { 
+          b63=true;
+          document.getElementById("man63").src="crown.png";
+          count(43,b63);
+        }
+     else if(b63=true)
+        {
+          b63=false;
+          document.getElementById("man63").src="white.png";
+          count(43,b63);
+        }
+   }
+  function f64(){
+      if(b64==false)
+        { 
+          b64=true;
+          document.getElementById("man64").src="crown.png";
+          count(44,b64);
+        }
+     else if(b64=true)
+        {
+          b64=false;
+          document.getElementById("man64").src="black.png";
+          count(44,b64);
+        }
+   }
+  function f65(){
+      if(b65==false)
+      { 
+        b65=true;
+        document.getElementById("man65").src="crown.png";
+        count(45,b65);
+      }
+      else if(b65=true)
+      {
+        b65=false;
+        document.getElementById("man65").src="white.png";
+        count(45,b65);
+      }
+   }
+  function f66(){
+      if(b66==false)
+      { 
+        b66=true;
+        document.getElementById("man66").src="crown.png";
+        count(46,b66);
+      }
+      else if(b66=true)
+      {
+        b66=false;
+        document.getElementById("man66").src="black.png";
+        count(46,b66);
+      }
+    }
+  function f67(){
+      if(b67==false)
+      { 
+        b67=true;
+        document.getElementById("man67").src="crown.png";
+        count(47,b67);
+      }
+      else if(b67=true)
+      {
+        b67=false;
+        document.getElementById("man67").src="white.png";
+        count(47,b67);
+      }
+    }
+  function f68(){
+      if(b68==false)
+      { 
+        b68=true;
+        document.getElementById("man68").src="crown.png";
+        count(48,b68);
+      }
+      else if(b68=true)
+      {
+        b68=false;
+        document.getElementById("man68").src="black.png";
+        count(48,b68);
+      }
+  }
 
 
 
